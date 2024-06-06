@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.sidebar .newThreadBtn {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background-color: #289f48;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    cursor: pointer;
+}
+
+.sidebar ul li:hover {
+    background-color: #444;
+}
+
+.chatbox {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.input-box {
+    display: flex;
+    padding: 10px;
+    background-color: #ddd;
+}
+
+.input-box input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-box button {
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-box button:hover {
+    background-color: #218838;
+}
+
+
+.chat-content {
+    padding: 20px;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(113, 126, 126); */
+    background-image: url('bg_chat.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* This will scale the image to cover the entire div */
+    background-repeat: no-repeat;
+}
+
+
+.aimessage {
+    align-self: flex-start;
+    background-color: #c0edff; /* Change this to the color you want */
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 70%;
+    line-height: 1.5;
+}
+
+.usermessage {
+    align-self: flex-end;
+    background-color: #f3ff9a; /* Change this to the color you want */
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 70%;
+    line-height: 1.5;
+}
+
+.aimessage, .usermessage {
+    margin-bottom: 25px;
+}

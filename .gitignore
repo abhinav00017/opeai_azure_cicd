@@ -1,0 +1,5 @@
+.env
+/projectazure_openai/repo_folder
+/projectazure_openai/utils/.env
+/projectazure_openai/utils/__pycache__
+/projectazure_openai/db/__pycache__
